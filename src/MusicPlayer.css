@@ -1,0 +1,183 @@
+.music-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  color: #1c1c1e;
+  padding: 20px;
+  border-radius: 25px;
+  width: 320px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.music-player h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1c1c1e;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  color: #007aff; /* Apple blue */
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.control-button:hover {
+  color: #0056b3; /* Darker Apple blue */
+}
+
+.track-info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #3a3a3c;
+  text-align: center;
+}
+
+.ReactAudioPlayer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:focus, .control-button:focus {
+  outline: none;
+}
+
+/* Additional styling for the range input (volume control) */
+input[type="range"] {
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #007aff;
+  border-radius: 2.5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  border: 1px solid #007aff;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #0056b3;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #007aff;
+  border-radius: 2.5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: 1px solid #007aff;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #007aff;
+  border: 0;
+  border-radius: 2.5px;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #007aff;
+  border: 0;
+  border-radius: 2.5px;
+}
+
+input[type="range"]::-ms-thumb {
+  border: 1px solid #007aff;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  height: 5px;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: #0056b3;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .music-player {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .music-player h1 {
+    font-size: 22px;
+  }
+
+  .control-button {
+    font-size: 22px;
+    padding: 8px;
+  }
+
+  .track-info {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .music-player {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .music-player h1 {
+    font-size: 20px;
+  }
+
+  .control-button {
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  .track-info {
+    font-size: 12px;
+  }
+}

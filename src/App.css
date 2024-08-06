@@ -2,7 +2,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #121212;
+  background-image: -webkit-linear-gradient(135deg, rgb(31, 31, 204), rgb(24, 199, 24));
   color: white;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -12,5 +12,4 @@ html, body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #121212;
 }

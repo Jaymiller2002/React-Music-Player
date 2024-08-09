@@ -10,8 +10,8 @@ const MusicPlayer = () => {
   const tracks = [
     {
       name: 'Track 1',
-      url: './assets/mp3/summer-rain-lofi-vibes-216043.mp3',
-      image: '/assets/images/beach-5526592_1280.jpg'
+      url: '/assets/mp3/summer-rain-lofi-vibes-216043.mp3',
+      image: './assets/images/beach-5526592_1280.jpg'
     },
     {
       name: 'Track 2',

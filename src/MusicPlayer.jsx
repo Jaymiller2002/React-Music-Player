@@ -89,7 +89,7 @@ const MusicPlayer = () => {
     return () => {
       audioElement.removeEventListener('ended', handleEnded);
     };
-  }, [currentTrack]);
+  }, [currentTrack, isPlaying]);
 
   return (
     <div className='music-player'>

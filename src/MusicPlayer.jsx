@@ -10,53 +10,53 @@ const MusicPlayer = () => {
   const tracks = [
     {
       name: 'Track 1',
-      url: '/src/assets/mp3/summer-rain-lofi-vibes-216043.mp3',
-      image: 'src/assets/images/beach-5526592_1280.jpg'
+      url: '/assets/mp3/summer-rain-lofi-vibes-216043.mp3',
+      image: '/assets/images/beach-5526592_1280.jpg'
     },
     {
       name: 'Track 2',
-      url: '/src/assets/mp3/good-night-160166.mp3',
-      image: 'src/assets/images/milky-way-2695569_1280.jpg'
+      url: '/assets/mp3/good-night-160166.mp3',
+      image: '/assets/images/milky-way-2695569_1280.jpg'
     },
     {
       name: 'Track 3',
-      url: 'src/assets/mp3/for-a-dream-lofi-vibes-216038.mp3',
-      image: 'src/assets/images/milky-way-5673357_1280.jpg'
+      url: '/assets/mp3/for-a-dream-lofi-vibes-216038.mp3',
+      image: '/assets/images/milky-way-5673357_1280.jpg'
     },
     {
       name: 'Track 4',
-      url: 'src/assets/mp3/fat-chillin-196099.mp3',
-      image: 'src/assets/images/night-4695490_1280.jpg'
+      url: '/assets/mp3/fat-chillin-196099.mp3',
+      image: '/assets/images/night-4695490_1280.jpg'
     },
     {
       name: 'Track 5',
-      url: 'src/assets/mp3/workout-trap-172029.mp3',
-      image: 'src/assets/images/night-sky-6039591_1280.jpg'
+      url: '/assets/mp3/workout-trap-172029.mp3',
+      image: '/assets/images/night-sky-6039591_1280.jpg'
     },
     {
       name: 'Track 6',
-      url: 'src/assets/mp3/good-morning-144685.mp3',
-      image: 'src/assets/images/plouzane-1758197_1280.jpg'
+      url: '/assets/mp3/good-morning-144685.mp3',
+      image: '/assets/images/plouzane-1758197_1280.jpg'
     },
     {
       name: 'Track 7',
-      url: 'src/assets/mp3/playa-del-sol-latin-lofi-160149.mp3',
-      image: 'src/assets/images/road-4055838_1280.jpg'
+      url: '/assets/mp3/playa-del-sol-latin-lofi-160149.mp3',
+      image: '/assets/images/road-4055838_1280.jpg'
     },
     {
       name: 'Track 8',
-      url: 'src/assets/mp3/virtual-insanity-208607.mp3',
-      image: 'src/assets/images/seascape-4636264_1280.jpg'
+      url: '/assets/mp3/virtual-insanity-208607.mp3',
+      image: '/assets/images/seascape-4636264_1280.jpg'
     },
     {
       name: 'Track 9',
-      url: 'src/assets/mp3/Too Close To Touch & Bad Omens - _Novocaine_.mp3',
-      image: 'src/assets/images/sunset-5136129_1280.jpg'
+      url: '/assets/mp3/Too Close To Touch & Bad Omens - _Novocaine_.mp3',
+      image: '/assets/images/sunset-5136129_1280.jpg'
     },
     {
       name: 'Track 10',
-      url: 'src/assets/mp3/Cleffy -  Meet you at the Graveyard (Official Lyric Video).mp3',
-      image: 'src/assets/images/thunderstorm-3625405_1280.jpg'
+      url: '/assets/mp3/Cleffy -  Meet you at the Graveyard (Official Lyric Video).mp3',
+      image: '/assets/images/thunderstorm-3625405_1280.jpg'
     },
     // Add more tracks here
   ];

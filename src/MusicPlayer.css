@@ -2,99 +2,108 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #1e1e1e 0%, #383838 100%);
+  justify-content: center;
+  background: linear-gradient(135deg, #4A90E2, #9013FE);
   color: #ffffff;
-  padding: 20px;
-  border-radius: 25px;
-  width: 320px;
+  padding: 25px;
+  border-radius: 30px;
+  width: 350px;
+  max-width: 100%;
+  min-height: 100vh;
   margin: auto;
-  box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.74);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease;
 }
 
 .music-player h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 25px;
   color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .control-button {
-  background: none;
+  background-color: #007aff;
   border: none;
-  color: #007aff; /* Apple blue */
-  font-size: 24px;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
   cursor: pointer;
-  padding: 10px;
-  transition: color 0.3s;
+  padding: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.control-button:active {
+  transform: scale(0.95);
 }
 
 .control-button:hover {
-  color: #0056b3; /* Darker Apple blue */
+  background-color: #0056b3;
 }
 
 .track-info {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .track-image {
-  width: 200px; /* Adjust the width as needed */
-  height: 200px; /* Adjust the height as needed */
-  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
   border-radius: 15px;
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
-  transition: all 0.5s ease;
+  border: 2px solid #007aff;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .track-image:hover {
-  -webkit-box-shadow: 0px 0px 15px 5px rgba(120, 120, 120, 0.75);
-  -moz-box-shadow: 0px 0px 15px 5px rgba(120, 120, 120, 0.75);
+  transform: scale(1.05);
   box-shadow: 0px 0px 15px 5px rgba(120, 120, 120, 0.75);
-  transition: all 0.5s ease;
 }
 
 .ReactAudioPlayer {
   width: 100%;
   margin-top: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-button:focus, .control-button:focus {
-  outline: none;
-}
-
-/* Additional styling for the range input (volume control) */
+/* Range input (volume control) styling */
 input[type="range"] {
   width: 100%;
   background: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
   height: 5px;
-  cursor: pointer;
   background: #007aff;
   border-radius: 2.5px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  border: 1px solid #007aff;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
+  height: 20px;
+  width: 20px;
   background: #ffffff;
+  border: 1px solid #007aff;
+  border-radius: 50%;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -5px;
+  margin-top: -7px;
 }
 
 input[type="range"]:focus::-webkit-slider-runnable-track {
@@ -102,99 +111,103 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 }
 
 input[type="range"]::-moz-range-track {
-  width: 100%;
   height: 5px;
-  cursor: pointer;
   background: #007aff;
   border-radius: 2.5px;
 }
 
 input[type="range"]::-moz-range-thumb {
-  border: 1px solid #007aff;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
+  height: 20px;
+  width: 20px;
   background: #ffffff;
+  border: 1px solid #007aff;
+  border-radius: 50%;
   cursor: pointer;
 }
 
 input[type="range"]::-ms-track {
   width: 100%;
   height: 5px;
-  cursor: pointer;
   background: transparent;
   border-color: transparent;
-  border-width: 16px 0;
   color: transparent;
 }
 
-input[type="range"]::-ms-fill-lower {
+input[type="range"]::-ms-fill-lower, input[type="range"]::-ms-fill-upper {
   background: #007aff;
-  border: 0;
-  border-radius: 2.5px;
-}
-
-input[type="range"]::-ms-fill-upper {
-  background: #007aff;
-  border: 0;
   border-radius: 2.5px;
 }
 
 input[type="range"]::-ms-thumb {
-  border: 1px solid #007aff;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
+  height: 20px;
+  width: 20px;
   background: #ffffff;
+  border: 1px solid #007aff;
+  border-radius: 50%;
   cursor: pointer;
-  height: 5px;
 }
 
-input[type="range"]:focus::-ms-fill-lower {
+input[type="range"]:focus::-ms-fill-lower, input[type="range"]:focus::-ms-fill-upper {
   background: #0056b3;
 }
 
-input[type="range"]:focus::-ms-fill-upper {
-  background: #0056b3;
+/* Full-screen mode */
+.music-player.full-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-/* Responsive styles */
+.music-player.full-screen .track-image {
+  width: 100%;
+  height: auto;
+}
+
+.music-player.full-screen .control-button {
+  font-size: 26px;
+  padding: 20px;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
   .music-player {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .music-player h1 {
-    font-size: 22px;
+    width: 80%;
+    padding: 20px;
   }
 
   .control-button {
-    font-size: 22px;
-    padding: 8px;
+    font-size: 20px;
+    padding: 12px;
   }
 
   .track-info {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .track-image {
+    width: 180px;
+    height: 180px;
   }
 }
 
 @media (max-width: 480px) {
   .music-player {
     width: 100%;
-    padding: 10px;
-  }
-
-  .music-player h1 {
-    font-size: 20px;
+    padding: 15px;
   }
 
   .control-button {
-    font-size: 20px;
-    padding: 6px;
+    font-size: 18px;
+    padding: 10px;
   }
 
   .track-info {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .track-image {
+    width: 160px;
+    height: 160px;
   }
 }
